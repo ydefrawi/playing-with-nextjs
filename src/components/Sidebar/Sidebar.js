@@ -1,7 +1,15 @@
 import { slide as Menu } from 'react-burger-menu';
+import React, {useState, useEffect} from 'react'
 export default props => {
+    const [open, setOpen]=useState(true)
+
+useEffect(() => {
+ setOpen(true)
+
+})
+
   return (
-    <Menu>
+    <Menu isOpen={open}>
       <a className="menu-item" href="/">
         Home
       </a>

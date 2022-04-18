@@ -1,7 +1,10 @@
+import React, { useEffect, useState } from 'react'
 import NavBar from './NavBar/NavBar'
 import Sidebar from '../components/Sidebar/Sidebar.js'
 
-const Layout = (props) =>{
+function Layout(props){
+
+
 
     return (
         <div>
