@@ -1,6 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.css';
 import { useEffect } from "react";
 import Layout from "../components/Layout.jsx"
+import './Sidebar.css'
 
 export default function App({ Component, pageProps }) {
 
