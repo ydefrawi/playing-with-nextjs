@@ -10,7 +10,7 @@ export default function App({ Component, pageProps }) {
   }, []);
 
   return (
-    <Layout>
+    <Layout id='page-wrap'>
       <Component {...pageProps} />
     </Layout>
 

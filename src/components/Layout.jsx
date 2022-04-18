@@ -7,14 +7,14 @@ function Layout(props){
 
 
     return (
-        <div>
+        <div id='outer-container'>
         {/* <NavBar /> */}
         <Sidebar pageWrapId={'page-wrap'} outerContainerId={'outer-container'} />
 
-      <main role="main">
+      <main id='page-wrap' role="main">
         {props.preContainer && props.preContainer}
-        <div className="album py-5 bg-light">
-          <div className="container">
+        <div className="album py-5 bg-white">
+          <div  className="container">
             {props.children}
           </div>
         </div>

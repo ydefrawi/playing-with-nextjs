@@ -1,4 +1,4 @@
-import { slide as Menu } from 'react-burger-menu';
+import { push as Menu } from 'react-burger-menu';
 import React, {useState, useEffect} from 'react'
 export default props => {
     const [open, setOpen]=useState(true)
@@ -9,7 +9,7 @@ useEffect(() => {
 })
 
   return (
-    <Menu isOpen={open}>
+    <Menu pageWrapId={props.pageWrapId} overlayClassName={'main-background'} isOpen={open}>
       <a className="menu-item" href="/">
         Home
       </a>
